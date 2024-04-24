@@ -2,12 +2,15 @@
 <nav>
   <ul>
     <li>
-      <a routerLink="/first-component/1" routerLinkActive="active">
+      <a [routerLink]="['/first-component/1']"
+         [queryParams]="{foo: 'foo'}"
+         routerLinkActive="active">
         First Component
       </a>
     </li>
     <li>
-      <a routerLink="/second-component" routerLinkActive="active">
+      <a routerLink="/second-component"
+         routerLinkActive="active">
         Second Component
       </a>
     </li>
